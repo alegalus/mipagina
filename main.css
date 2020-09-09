@@ -1,6 +1,5 @@
 /*-- CSS RESET--*/
 /* Box sizing rules */
-*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -35,38 +34,30 @@ body {
   font-weight: 300;}
 
 /* Make images easier to work with */
-img {
-  max-width: 100%;
-  
-}
+
+img { max-width: 100%;}
+
 /*--CSS RESET END--*/
+
 /*--BACKGROND COLOR--*/
 
-html {background: #ECE9E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); 
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+html {background: #ffffff;  /* fallback for old browsers */}
 
 /*--HEADER--*/
 
-header{display: flex; justify-content: space-around; height: 5em;
-  background: #F2994A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A); 
-   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F2C94C, #F2994A); 
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   }
-
-
+header {display: flex; justify-content: space-around; height: 5em;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); 
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 /*--NAV--*/
 
 nav a{margin-top: 0.8em;font-size: 1.8em;text-decoration: none;color: #0f0f0f;padding: 0em 0.2em;
      display: inline-flex; transition: all 0.8s;justify-content: center;margin-left: 0.3em;}
 
-nav a:hover {transform: scale(1.1,1.1); color: #0e6464;}
-
+nav a:hover {transform: scale(1.1,1.1); color: #dd3308;}
 
 
 /*--SOCIAL--*/
@@ -74,7 +65,7 @@ nav a:hover {transform: scale(1.1,1.1); color: #0e6464;}
 .social a { margin-top: 1em;font-size: 1.8em;text-decoration: none;color: #0f0f0f;padding: 0em 0.2em;
           display: inline-flex; transition: all 0.8s;justify-content: center;margin-left: 0.3em;}
 
-.social a:hover {transform: scale(1.1,1.1); color: #0e6464;}
+.social a:hover {transform: scale(1.1,1.1); color: #dd3308;}
 
 /*--ENCABEZADO--*/
 
@@ -86,33 +77,26 @@ nav a:hover {transform: scale(1.1,1.1); color: #0e6464;}
 .encabezado img{width: 4%;}
 .encabezado p{ width: 70%; margin-top: 1.3em; line-height: 2em; text-align:center; font-size: 1.5em;}
 .encabezado h1{font-size: 4em;}
-/*--IMAGEN FONDO ENCABEZADP--*/
-
-.fondo::before{content:""; position: absolute; top:0; bottom: 0; right: 0; left: 0;margin: auto;
-                background-image: url(imagenes/h2_background.png); opacity: 0; z-index: -1;}
 
 /*--MAIN--*/
 
-
 main{display: flex;flex-flow: row wrap;justify-content: space-around;margin:5em auto 3em; width: 95%;}
-
-
 
 /*--RRHH--*/
 
 
-.rrhh {width: 30%;height: 29em;border: solid 0.5px #86c5d8; padding: 0.6em;border-radius: 5px;
-      display: flex;flex-flow: column;justify-content: center;align-items: center; margin-left: 1em;}
+.rrhh {width: 28%;height: 29em;border: solid 0.5px #86c5d8; padding: 0.6em;border-radius: 5px;
+      display: flex;flex-flow: column;justify-content: center;align-items: center;}
 .rrhh img{width: 100%; margin-top: 1em;}
 .rrhh p{text-align: center;margin: 1em 0em}
 .rrhh h2{text-align: center;margin: 0em 0em 1em 0em;}
 
 
 /*--ESTUDIOS--*/
-.estudios {width: 30%;height: 29em; margin: 0em 3em;;border: solid 0.5px #86c5d8; padding: 0.6em;
+.estudios {width: 28%;height: 29em; margin: 0em 3em;;border: solid 0.5px #86c5d8; padding: 0.6em;
           border-radius: 5px;display: flex;flex-flow: column;}
 .estudios p{text-align: justify;margin: 1em 0em}
-.estudios h2{text-align: center;margin: 1.7em 0em 0em 0em;}
+.estudios h2{text-align: center;margin: 2.4em 0em 0em 0em;}
 .estudios img{width: 25%;margin-left: 1em;}
 .estudios .js{width: 13%;margin-left: 1em;}
 .vuereact{display: flex; flex-flow: row;}
@@ -120,8 +104,8 @@ main{display: flex;flex-flow: row wrap;justify-content: space-around;margin:5em 
 
 /*--DEVELOPER--*/
 
-.front{width: 30%;height: 29em; border: solid 0.5px #86c5d8;padding: 0.6em;border-radius: 5px; 
-      display: flex;flex-flow: column;justify-content: center;align-items: center;margin-right: 1em;}
+.front{width: 28%;height: 29em; border: solid 0.5px #86c5d8;padding: 0.6em;border-radius: 5px; 
+      display: flex;flex-flow: column;justify-content: center;align-items: center;}
 .front img{width: 100%; margin-top: 1em;}
 .front p{text-align: center;margin: 1em 0em;}
 .front h2{text-align: center;margin: 0em 0em 1em 0em;}
@@ -140,12 +124,12 @@ main{display: flex;flex-flow: row wrap;justify-content: space-around;margin:5em 
       margin:2em;  width: 45%; text-align: left;}
 .form label input button{padding: 1em;}
  label{margin-top: 1.2em;font-size: 1.2em;}
-.form textarea{width: 100%;}
-.form input{width: 100%;height: 2.5em;}
+.form textarea{width: 100%;border-radius: 8px;}
+.form input{width: 100%;height: 2.5em; border-radius: 8px;}
 
 /*--BUTTON--*/
 
-.button{margin-top: 1em; font-size: 1.2em; height: 1.8em; color: #ffffff; border-radius: 5px; 
+.button{margin-top: 1em; font-size: 1.2em; height: 1.8em; color: #ffffff; border-radius: 8px; 
        border: 1px solid #ffffff;background: #ff4b1f;  /*    fallback for old browsers */
  background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);  
  /* Chrome 10-25, Safari 5.1-6 */
@@ -172,27 +156,27 @@ footer {background: #e53935;  /* fallback for old browsers */
 .encabezado img{width: 5%;}
 main{flex-flow: column;} .rrhh{width: 95%; height: 40em; margin:auto;}.rrhh{margin-bottom: 1em;}
 .front{width: 95%;height: 40em; margin:auto;}.front{margin-bottom: 1em;}
-.estudios{width: 95%;margin-left: 0em;height: 40em; margin:auto;}.estudios{margin-bottom: 1em;}
+.estudios{width: 95%;height: 40em; margin:auto;}.estudios{margin-bottom: 1em;}
 #contacto{width: 100%;}
-#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;}}
+#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: auto;}}
 
 @media screen and (max-width: 500px)
 {header{flex-flow: column; justify-content: center; align-items: center; height: 8em;width: 100%;} 
 .imagen img{width: 70%;}.encabezado h1{font-size: 2em;}.encabezado p{font-size: 1.4em;text-align: justify;} 
 .encabezado img{width: 10%;}
-main{flex-flow: column;} .rrhh{width: 95%;margin: auto;}.rrhh{margin-bottom: 1em;}
-.front{width: 95%;margin: auto;}.front{margin-bottom: 1em;}
-.estudios{width: 95%;margin-left: 0em;margin: auto;}.estudios{margin-bottom: 1em; padding: 0em 1em;}
+main{flex-flow: column;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em;}
+.front{width: 90%;margin: auto;}.front{margin-bottom: 1em;}
+.estudios{width: 90%;margin-left: 0em;margin: auto;}.estudios{margin-bottom: 1em;}
 #contacto{width: 100%;}
-#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;}
+#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: auto;}
 #contacto h2{font-size: 1.8em;}}
 
 @media screen and (max-width: 360px) {header{flex-flow: column; justify-content: center;align-items: center; height: 8em;} 
 .imagen img{width: 70%;}.encabezado h1{font-size: 1.8em;}.encabezado p{font-size: 1.4em;text-align: justify;} 
 .encabezado img{width: 10%;}
-main{flex-flow: column;} rrhh{width: 95%;margin: auto;}.rrhh{margin-bottom: 1em;}
-.front{width: 95%;margin: auto;}.front{margin-bottom: 1em;}
-.estudios{width: 95%;margin: auto;}.estudios{margin-bottom: 1em; margin-left: 0.6em;}
+main{flex-flow: column;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em;}
+.front{width: 90%;margin: auto;}.front{margin-bottom: 1em;}
+.estudios{width: 90%;margin: auto;}.estudios{margin-bottom: 1em;}
 #contacto{width: 100%;}
-#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;}
+#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: auto;}
 #contacto h2{font-size: 1.8em;}}
