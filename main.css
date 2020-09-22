@@ -31,7 +31,9 @@ body {
   line-height: 1;
   font-family: 'Jost', sans-serif;
   font-style: normal;
-  font-weight: 300;}
+  font-weight: 300;
+  padding-top: 5em;}
+  
 
 /* Make images easier to work with */
 
@@ -45,12 +47,16 @@ html {background: #ffffff;  /* fallback for old browsers */}
 
 /*--HEADER--*/
 
-header {display: flex; justify-content: space-around; height: 5em;
+header {display: flex; justify-content: space-around; height: 4.8em;
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); 
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ border-bottom:  solid 1px #d4d4d4;}
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */}
 
 /*--NAV--*/
 
@@ -80,22 +86,22 @@ nav a:hover {transform: scale(1.1,1.1); color: #dd3308;}
 
 /*--MAIN--*/
 
-main{display: flex;flex-flow: row wrap;justify-content: space-around;margin:5em auto 3em; width: 95%;}
+main{display: flex;flex-flow: row wrap;justify-content: space-around;padding-top: 4em; width: 95%; margin:auto;}
 
 /*--RRHH--*/
 
 
 .rrhh {width: 28%;height: 29em;border: solid 0.5px #86c5d8; padding: 0.6em;border-radius: 5px;
       display: flex;flex-flow: column;justify-content: center;align-items: center;box-shadow: 5px 2px 8px #888888;}
-.rrhh img{width: 100%; margin-top: 1em;}
-.rrhh p{text-align:justify;margin: 2em 0em}
-.rrhh h2{text-align: center;margin: 1em 0em 1em 0em;}
+.rrhh img{width: 100%; margin-top: 0em;}
+.rrhh p{text-align:justify;margin: 2em 0em; width: 90%;}
+.rrhh h2{text-align: center;margin: 1.8em 0em 1em 0em;}
 
 
 /*--ESTUDIOS--*/
 .estudios {width: 28%;height: 29em; margin: 0em 3em;;border: solid 0.5px #86c5d8; padding: 0.6em;
           border-radius: 5px;display: flex;flex-flow: column;box-shadow: 5px 2px 8px #888888;}
-.estudios p{text-align: justify;margin: 2em 0em}
+.estudios p{text-align: justify;margin: 2em auto;width: 90%;}
 .estudios h2{text-align: center;margin: 0.7em 0em 0em 0em;}
 .desweb {display: flex; flex-flow: row;justify-content: center;}
 .desweb img {margin-left: 1em;}
@@ -109,23 +115,23 @@ main{display: flex;flex-flow: row wrap;justify-content: space-around;margin:5em 
 .front{width: 28%;height: 29em; border: solid 0.5px #86c5d8;padding: 0.6em;border-radius: 5px; 
       display: flex;flex-flow: column;justify-content: center;align-items: center;box-shadow: 5px 2px 8px #888888;}
 .front img{width: 100%; margin-top: 1em;}
-.front p{text-align: justify;margin: 2.5em 0em;}
+.front p{text-align: justify;margin: 2em auto; width: 90%;}
 .front h2{text-align: center;margin: 0em 0em 1em 0em;}
 
 /*--CONTACTO--*/
 
 #contacto{width: 60%;align-items: center;justify-content: center; margin: auto; 
-         display: flex;flex-flow: column; text-align: center;}
-#contacto p{ width: 100%; margin-top: 1.3em; line-height: 1em; text-align:center; font-size: 1.3em;}
+         display: flex;flex-flow: column; text-align: center; padding-top: 5.1em;}
+#contacto p{ width: 100%; line-height: 1em; text-align:center; font-size: 1.3em;}
 #contacto h2{font-size: 2.5em;}
 
 /*--FORMULARIO--*/
 
 
 .form{display: flex; flex-flow: column nowrap;flex: 2;justify-content: center;align-content:space-between;
-      margin:2em;  width: 45%; text-align: left;}
+      margin:1.5em;  width: 45%; text-align: left;}
 .form label input button{padding: 1em;}
- label{margin-top: 1.2em;font-size: 1.2em;}
+ label{margin-top: 1em;font-size: 1.2em;}
 .form textarea{width: 100%;border-radius: 8px;}
 .form input{width: 100%;height: 2.5em; border-radius: 8px;}
 
@@ -141,44 +147,52 @@ main{display: flex;flex-flow: row wrap;justify-content: space-around;margin:5em 
 
 
 /*--FOOTER--*/
-footer {background: #e53935;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e35d5b, #e53935); 
-   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e35d5b, #e53935); 
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+footer {background-image: linear-gradient(-131deg, #FCDFE7 0%, #FFE4C7 100%);
+  width: 100%; height: 6em; display: flex; flex-flow: column; justify-content: center;align-items: center; margin-top: 2em;}
+
+footer p{padding: 0.5em 0em; font-weight: 900;}
 
 
 /* -------- 5. MEDIAQUERY -------- */
 
 
 @media screen and (min-width: 760px) and (max-width: 780px)
-{.imagen img{width: 50%;}.encabezado h1{font-size: 4em;}
+{body {padding-top: 8em;}
+.imagen img{width: 50%;}.encabezado h1{font-size: 4em;}
+.imagen{ margin-top: 0em;}
 .encabezado p{font-size: 1.4em;text-align: justify; margin-bottom: 1em;} 
 .encabezado img{width: 5%;}
-main{flex-flow: column;} .rrhh{width: 95%; height: 40em; margin:auto;}.rrhh{margin-bottom: 1em;}
-.front{width: 95%;height: 40em; margin:auto;}.front{margin-bottom: 1em;}
-.estudios{width: 95%;height: 40em; margin:auto;}.estudios{margin-bottom: 1em;}
+main{flex-flow: column;} .rrhh{width: 95%; height: 32em; margin:auto; font-size: 1.3em;}.rrhh{margin-bottom: 1em;}
+.front{width: 95%;height: 32em; margin:auto; font-size: 1.3em;}.front{margin-bottom: 1em;}
+.estudios{width: 95%;height: 32em; margin:auto; font-size: 1.3em;}.estudios{margin-bottom: 1em;}
+.htcss {width: 25%;}
+.js {width: 12%;}
+.vuereact img{width: 15%;}
+.imgrrhh {width: 80%;}
+.front img{width: 80%;}
 #contacto{width: 100%;}
 #contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: auto;}}
 
 @media screen and (max-width: 500px)
-{header{flex-flow: column; justify-content: center; align-items: center; height: 8em;width: 100%;} 
+{body {padding-top: 8em;}
+header{flex-flow: column; justify-content: center; align-items: center; height: 8em;width: 100%;} 
 .imagen img{width: 70%;}.encabezado h1{font-size: 2em;}.encabezado p{font-size: 1.4em;text-align: justify;} 
 .encabezado img{width: 10%;}
-main{flex-flow: column;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em;}
-.front{width: 90%;margin: auto;}.front{margin-bottom: 1em;}
-.estudios{width: 90%;margin-left: 0em;margin: auto;}.estudios{margin-bottom: 1em;}
-#contacto{width: 100%;}
-#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: auto;}
+main{flex-flow: column;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em;height: 28em;}
+.front{width: 90%;margin: auto;}.front{margin-bottom: 1em;height: 28em;}
+.estudios{width: 90%;margin-left: 0em;margin: auto;}.estudios{margin-bottom: 1em;height: 28em;}
+#contacto{width: 100%;padding-top: 8em;}
+#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: 1em auto;}
 #contacto h2{font-size: 1.8em;}}
 
-@media screen and (max-width: 360px) {header{flex-flow: column; justify-content: center;align-items: center; height: 8em;} 
+@media screen and (max-width: 360px) 
+{body {padding-top: 8em;}
+header{flex-flow: column; justify-content: center;align-items: center; height: 8em;} 
 .imagen img{width: 70%;}.encabezado h1{font-size: 1.8em;}.encabezado p{font-size: 1.4em;text-align: justify;} 
 .encabezado img{width: 10%;}
-main{flex-flow: column;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em;}
-.front{width: 90%;margin: auto;}.front{margin-bottom: 1em;}
-.estudios{width: 90%;margin: auto;}.estudios{margin-bottom: 1em;}
-#contacto{width: 100%;}
-#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: auto;}
+main{flex-flow: column; margin-bottom: 0em;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em;height: 28em;}
+.front{width: 90%;margin: auto;}.front{margin-bottom: 1em; height: 28em;}
+.estudios{width: 90%;margin: auto;}.estudios{margin-bottom: 1em;height: 28em;}
+#contacto{width: 100%; padding-top: 8em;}
+#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: 1em auto;}
 #contacto h2{font-size: 1.8em;}}
