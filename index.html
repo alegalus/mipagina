@@ -70,7 +70,7 @@
         <br>
         <br>
         <div class="vuereact">
-            <img src="imagenes/vue.png">
+            
             <img src="imagenes/1200px-React.png">
             <img src="imagenes/git-icon-logo-png-transparent.png" alt="">
             <img src="imagenes/github_PNG40.png" alt="">
@@ -94,12 +94,12 @@
 <div id="contacto">
     <h2> Contacto </h2>
     <p>Si te queres contactar conmigo, podes encontrarme en Linkedin, Github o enviarme un email. Estoy buscando mi primer empleo como desarrollador Front End, así que si crees que mi perfil puede ayudarte, no dudes en avisarme.</p>
-    <form class="form" action="" method="POST">
+    <form class="form" action="" method="post" enctype="text/plain">
         
-        <label>Nombre:<input name="nombre" type="text"></label>
-        <label>Email:<input name="email" type="email" ></label>
-        <label>Mensaje:<textarea name="message" rows="10" required=""></textarea></label>
-        <button class="button" type="submit"><a>Enviar</a></button>
+        <label id="txtName">Nombre:<input name="nombre" type="text" required></label>
+        <label id="txtEmail">Email:<input name="email" type="email"  required></label>
+        <label id="txtMessage">Mensaje:<textarea name="message" rows="10" required=""></textarea></label>
+        <button id="btnSend" class="button" type="submit" value="Send"><a>Enviar</a></button>
     
         
     </form>
