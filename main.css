@@ -79,7 +79,8 @@ nav a:hover {transform: scale(1.1,1.1); color: #dd3308;}
 
 .imagen img {width: 30%;display: flex; align-items: center;justify-content: center; margin: auto;}
 
-.encabezado{margin: auto; margin-top: 1.2em; display: flex;flex-flow: column; align-items: center;justify-content: center;}
+.encabezado{margin: auto; margin-top: 1.2em; display: flex;flex-flow: column; align-items: center;
+  justify-content: center;}
 .encabezado img{width: 4%;}
 .encabezado p{ width: 70%; margin-top: 1.3em; line-height: 2em; text-align:center; font-size: 1.5em;}
 .encabezado h1{font-size: 4em;}
@@ -123,7 +124,7 @@ main{display: flex;flex-flow: row wrap;justify-content: space-around;padding-top
 
 #contacto{width: 60%;align-items: center;justify-content: center; margin: auto; 
          display: flex;flex-flow: column; text-align: center; padding-top: 5.1em;}
-#contacto p{ width: 100%; line-height: 1em; text-align:center; font-size: 1.3em;}
+#contacto p{ width: 100%; line-height: 1em; text-align:center; font-size: 1.3em; padding-top: 0.5em;}
 #contacto h2{font-size: 2.5em;}
 
 /*--FORMULARIO--*/
@@ -156,6 +157,30 @@ footer p{padding: 0.5em 0em; font-weight: 900; text-align: center;}
 
 /* -------- 5. MEDIAQUERY -------- */
 
+@media screen and (min-width: 1920px)
+{
+ 
+  .rrhh{height: 35em;}
+  .estudios{height: 35em;}
+  .estudios h2{margin-top: 1.6em;}
+  .front{height: 35em;}
+  .front h2{margin-top: 1em;}
+  
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{ 
+main{   justify-content: space-around;
+        width: 100%; 
+        margin:auto;}
+.rrhh{margin-left: 0.3em;}
+.rrhh h2 {margin-top: 2em;}
+.rrhh p{margin-top: 1em; font-size: 1em;}
+.estudios{margin: 0em 0.5em;}
+.estudios h2 {margin-top: 1.8em;}
+.front{margin-right: 0.3em;}}
+
 
 @media screen and (min-width: 760px) and (max-width: 780px)
 {body {padding-top: 8em;}
@@ -172,7 +197,7 @@ main{flex-flow: column;} .rrhh{width: 95%; height: 32em; margin:auto; font-size:
 .imgrrhh {width: 80%;}
 .front img{width: 80%;}
 #contacto{width: 100%;}
-#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: auto;}}
+#contacto p{font-size: 1.4em;text-align: justify;padding: 0em 1em;width: 80%; margin: auto;padding-top: 0.5em;}}
 
 @media screen and (max-width: 500px)
 {body {padding-top: 8em;}
@@ -188,6 +213,7 @@ main{flex-flow: column;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em
 
 @media screen and (max-width: 360px) 
 {body {padding-top: 8em;}
+.navbar{font-size: 0.9em;}
 header{flex-flow: column; justify-content: center;align-items: center; height: 8em;} 
 .imagen img{width: 70%;}.encabezado h1{font-size: 1.8em;}.encabezado p{font-size: 1.4em;text-align: justify;} 
 .encabezado img{width: 10%;}
