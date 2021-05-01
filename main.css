@@ -81,7 +81,7 @@ nav a:hover {transform: scale(1.1,1.1); color: #dd3308;}
 
 .encabezado{margin: auto; margin-top: 1.2em; display: flex;flex-flow: column; align-items: center;
   justify-content: center;}
-.encabezado img{width: 4%;}
+.encabezado img{width: 6%;}
 .encabezado p{ width: 70%; margin-top: 1.3em; line-height: 2em; text-align:center; font-size: 1.5em;}
 .encabezado h1{font-size: 4em;}
 
@@ -119,6 +119,11 @@ main{display: flex;flex-flow: row wrap;justify-content: space-around;padding-top
 .front img{width: 100%; margin-top: 1em;}
 .front p{text-align: justify;margin: 2em auto; width: 90%;}
 .front h2{text-align: center;margin: 0em 0em 1em 0em;}
+
+/*--PROYECTOS--*/
+#proyectos{ height: 20em; margin: 1em 0em; padding-top: 5em;}
+#proyectos h2{font-size: 2.5em; text-align: center;}
+
 
 /*--CONTACTO--*/
 
@@ -187,7 +192,7 @@ main{   justify-content: space-around;
 .imagen img{width: 50%;}.encabezado h1{font-size: 4em;}
 .imagen{ margin-top: 0em;}
 .encabezado p{font-size: 1.4em;text-align: justify; margin-bottom: 1em;} 
-.encabezado img{width: 5%;}
+.encabezado img{width: 7%;}
 main{flex-flow: column;} .rrhh{width: 95%; height: 32em; margin:auto; font-size: 1.3em;}.rrhh{margin-bottom: 1em;}
 .front{width: 95%;height: 32em; margin:auto; font-size: 1.3em;}.front{margin-bottom: 1em;}
 .estudios{width: 95%;height: 32em; margin:auto; font-size: 1.3em;}.estudios{margin-bottom: 1em;}
@@ -203,7 +208,7 @@ main{flex-flow: column;} .rrhh{width: 95%; height: 32em; margin:auto; font-size:
 {body {padding-top: 8em;}
 header{flex-flow: column; justify-content: center; align-items: center; height: 8em;width: 100%;} 
 .imagen img{width: 70%;}.encabezado h1{font-size: 2em;}.encabezado p{font-size: 1.4em;text-align: justify;} 
-.encabezado img{width: 10%;}
+.encabezado img{width: 18%;}
 main{flex-flow: column;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em;height: 28em;}
 .front{width: 90%;margin: auto;}.front{margin-bottom: 1em;height: 28em;}
 .estudios{width: 90%;margin-left: 0em;margin: auto;}.estudios{margin-bottom: 1em;height: 28em;}
@@ -216,7 +221,7 @@ main{flex-flow: column;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em
 .navbar{font-size: 0.9em;}
 header{flex-flow: column; justify-content: center;align-items: center; height: 8em;} 
 .imagen img{width: 70%;}.encabezado h1{font-size: 1.8em;}.encabezado p{font-size: 1.4em;text-align: justify;} 
-.encabezado img{width: 10%;}
+.encabezado img{width: 18%;}
 main{flex-flow: column; margin-bottom: 0em;} .rrhh{width: 90%;margin: auto;}.rrhh{margin-bottom: 1em;height: 28em;}
 .front{width: 90%;margin: auto;}.front{margin-bottom: 1em; height: 28em;}
 .estudios{width: 90%;margin: auto;}.estudios{margin-bottom: 1em;height: 28em;}
